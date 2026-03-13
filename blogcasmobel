@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>MUEBLES CASMOBEL</title>
+
+<style>
+body{
+  font-family: Arial, sans-serif;
+  margin:0;
+  background:#f4f4f4;
+}
+
+header{
+  background:#2c2c2c;
+  color:white;
+  text-align:center;
+  padding:30px;
+}
+
+nav{
+  background:#444;
+  padding:15px;
+  text-align:center;
+}
+
+nav a{
+  color:white;
+  margin:15px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+nav a:hover{
+  color:#ddd;
+}
+
+section{
+  padding:40px;
+}
+
+.productos{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  justify-content:center;
+}
+
+.producto{
+  background:white;
+  padding:15px;
+  border-radius:10px;
+  width:220px;
+  text-align:center;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.producto img{
+  width:100%;
+  border-radius:10px;
+}
+
+.caracteristicas{
+  display:none;
+  margin-top:10px;
+  background:#f0f0f0;
+  padding:10px;
+  border-radius:5px;
+  text-align:left;
+}
+
+button{
+  margin-top:10px;
+  padding:6px 10px;
+  border:none;
+  background:#333;
+  color:white;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#555;
+}
+
+footer{
+  background:#2c2c2c;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+</style>
+
+<script>
+function mostrar(id){
+  let elemento = document.getElementById(id);
+  elemento.style.display = (elemento.style.display === "none" || elemento.style.display === "") ? "block" : "none";
+}
+</script>
+
+
+
+</head>
+
+<body>
+
+<header>
+  <h1>MUEBLES CASMOBEL</h1>
+  <p><i>vive tu hogar</i></p>
+  <figure>
+    <img src="CASMOBEL LOGO.png" id="20px">
+</figure>
+</header>
+
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#sofas">Sofás</a>
+  <a href="#sillas">Sillas</a>
+  <a href="#sillones">Sillones</a>
+  <a href="#mesas">Mesas</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="inicio">
+  <h2>Bienvenido</h2>
+  <p>En MUEBLES CASMOBEL encontrarás muebles modernos y de calidad para tu hogar.</p>
+</section>
+
+<!-- SOFÁS -->
+<section id="sofas">
+<h2>Sofás</h2>
+<div class="productos">
+
+<div class="producto">
+<img src="NEW DANCE" alt="NEW DANCE">
+<h3>Sofá "NEW DANCE"</h3>
+<p>- €</p>
+<button onclick="mostrar('sofa1')">Ver características</button>
+<div id="sofa1" class="caracteristicas">
+<p>..................</p>
+</div>
+</div>
+
+<div class="producto">
+<img src="ZEUS PLUS.png" alt="ZEUS PLUS">
+<h3>Sofá "ZEUS PLUS"</h3>
+<p>520€</p>
+<button onclick="mostrar('sofa2')">Ver características</button>
+<div id="sofa2" class="caracteristicas">
+<p>....................</p>
+
+</div>
+</div>
+
+<div class="producto">
+<img src="CRONOS PLUS" alt="CRONOS PLUS">
+<h3>Sofá "CRONOS PLUS"</h3>
+<p>520€</p>
+<button onclick="mostrar('sofa3')">Ver características</button>
+<div id="sofa3" class="caracteristicas">
+<p>................</p>
+</div>
+</div>
+
+<div class="producto">
+<img src="CHAISELONGUE MORFEO.jpg" alt="CHAISELONGUE MORFEO">
+<h3>Sofá "CHAISELONGUE MORFEO"</h3>
+<p>520€</p>
+<button onclick="mostrar('sofa4')">Ver características</button>
+<div id="sofa4" class="caracteristicas">
+<p>...................</p>
+</div>
+</div>
+
+<div class="producto">
+<img src="" alt="VENECIA">
+<h3>Sofá "VENECIA"</h3>
+<p>- €</p>
+<button onclick="mostrar('sofa5')">Ver características</button>
+<div id="sofa5" class="caracteristicas">
+<p>................</p>
+</div>
+</div>
+
+<div class="producto">
+<img src="CHAISLONGUE LYON" alt="CHAISELONGUE LYON">
+<h3>Sofá "CHAISELONGUE LYON"</h3>
+<p>- €</p>
+<button onclick="mostrar('sofa6')">Ver características</button>
+<div id="sofa6" class="caracteristicas">
+<p>................</p>
+</div>
+</div>
+
+<div class="producto">
+<img src="CHAISLONGUE COSTA.jpg" alt="CHAISELONGUE COSTA">
+<h3>Sofá "CHAISELONGUE COSTA"</h3>
+<p>520€</p>
+<button onclick="mostrar('sofa7')">Ver características</button>
+<div id="sofa7" class="caracteristicas">
+<p>................</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- SILLAS -->
+<section id="sillas">
+<h2>Sillas</h2>
+<div class="productos">
+
+<div class="producto">
+<img src="SILLA OPERA CBRAZO.jpg" alt="Silla OPERA con brazos">
+<h3>Silla "ÓPERA con brazos"</h3>
+<p>60€</p>
+<button onclick="mostrar('silla1')">Ver características</button>
+<div id="silla1" class="caracteristicas">
+<p>...............</p>
+</div>
+</div>
+
+<div class="producto">
+<img src="SILLA OPERA SBRAZO.jpg" alt="Silla OPERA sin brazos">
+<h3>Silla "ÓPERA sin brazos"</h3>
+<p>55€</p>
+<button onclick="mostrar('silla2')">Ver características</button>
+<div id="silla2" class="caracteristicas">
+<p>......................</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- SILLONES -->
+<section id="sillones">
+<h2>Sillones</h2>
+<div class="productos">
+
+<div class="producto">
+<img src="" alt="MARINA">
+<h3>Sillón Relax "MARINA"</h3>
+<p>- €</p>
+<button onclick="mostrar('sillon1')">Ver características</button>
+<div id="sillon1" class="caracteristicas">
+<p>.................</p>
+</div>
+</div>
+
+<div class="producto">
+<img src="sillon2.jpg" alt="Sillón Elegante">
+<h3>Sillón Elegante</h3>
+<p>- €</p>
+<button onclick="mostrar('sillon2')">Ver características</button>
+<div id="sillon2" class="caracteristicas">
+<p>.................</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- MESAS -->
+<section id="mesas">
+<h2>Mesas</h2>
+<div class="productos">
+
+<div class="producto">
+<img src="mesa1.jpg" alt="Mesa Roble">
+<h3>Mesa Roble</h3>
+<p>250€</p>
+<button onclick="mostrar('mesa1')">Ver características</button>
+<div id="mesa1" class="caracteristicas">
+<p>.....................</p>
+</div>
+</div>
+
+<div class="producto">
+<img src="mesa2.jpg" alt="Mesa Moderna">
+<h3>Mesa Moderna</h3>
+<p>300€</p>
+<button onclick="mostrar('mesa2')">Ver características</button>
+<div id="mesa2" class="caracteristicas">
+<p>................</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" >
+<h2>Contacto</h2>
+<p>
+      <ul>
+    <a>Teléfono:</a>
+      <ul>
+        <li> 925 46 04 84 (MADRIDEJOS)</li>
+      <li> 925 46 04 84 (CONSUEGRA)</li>
+      <li> 925 48 02 67 (OLÍAS DEL REY)</li>
+      </ul>
+  </ul>
+  <p>Email: casmobel@casmobel.com</p>
+
+</p>
+
+</section>
+
+<footer>
+<p>© 2026 MUEBLES CASMOBEL</p>
+</footer>
+
+</body>
+</html>
+
